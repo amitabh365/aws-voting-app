@@ -10,7 +10,7 @@ services:
 
   azure-vote-front:
     build: ./aws-vote
-    image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
+    image: dkr.ecr.amazonaws.com/aws-vote-front:v1            
     container_name: aws-vote-front
     environment:
       REDIS: aws-vote-back
