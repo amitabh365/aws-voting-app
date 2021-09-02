@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: aws-vote-back
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: aws-vote-back
@@ -39,7 +39,7 @@ kind: Deployment
 metadata:
   name: aws-vote-front
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: aws-vote-front
